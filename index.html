@@ -1,0 +1,535 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		[style*="Arial"] {font-family: arial, 'Open Sans', sans-serif !important;}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+
+		table td {
+			border-collapse: collapse;
+		}
+
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+    .logo {
+      padding-bottom: 28px;
+    }
+
+    .title {
+      margin: 0;
+      padding-bottom: 12px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .title2 {
+      margin: 0;
+      padding-bottom: 21px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+
+    .title3 {
+      margin: 0;
+      padding-bottom: 8px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 24px;
+      color: #FFFFFF;
+    }
+
+    .title-bottom {
+      margin: 0;
+      padding-bottom: 17px;
+      padding-top: 25px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .descr {
+      margin: 0;
+      padding-bottom: 40px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .descr-small {
+      margin: 0;
+      padding-bottom: 21px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+
+    .descr-small-grey {
+      margin: 0;
+      margin-right: 25px;
+      padding-bottom: 38px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color:  #515151;
+    }
+
+    .descr-footer {
+      margin: 0;
+      padding-bottom: 18px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 24px;
+      color: #757575;
+    }
+
+    .descr-footer-small {
+      margin: 0;
+      padding-bottom: px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 24px;
+      color: #757575;
+    }
+
+    .descr-footer-small a {
+      color: #9D5CD0;
+    }
+
+    .src {
+      padding-bottom: 21px;
+      border-spacing: 0;
+    }
+
+    .pb-13 {
+      padding-bottom: 13px;
+      border-spacing: 0;
+    }
+
+    .pb-14 {
+      padding-bottom: 14px;
+      border-spacing: 0;
+    }
+
+    .pb-32 {
+      padding-bottom: 32px;
+      border-spacing: 0;
+    }
+
+    .center {
+      padding-top: 30px;
+    }
+
+    .button {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+      border-radius: 50px;
+      background-color: #2ABE80;
+      margin-top: 30px;
+      color: #FFFFFF;
+      width: 240px;
+      height: 45px;
+    }
+
+    .button a {
+      color: #FFFFFF;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+
+    .container {
+            position: relative;
+            background-image: url('img/slice01.png');
+            background-size: cover;
+            color: white; /* Цвет текста */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+    @media (max-width: 620px) {
+      .table-600 {
+        width: 280px !important;
+      }
+
+      .table-520 {
+        width: 244px !important;
+      }
+
+      .table-250 {
+        width: 240px !important;
+      }
+
+      .mobile-top {
+        display: block !important;
+      }
+    }
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;" bgcolor="#ffffff">
+  <table cellpadding="0" cellspacing="0" class="table-600" width="100%" bgcolor="#ffffff" align="center">
+	<tr>
+      <td>
+        <table class="table-600" cellpadding="0" cellspacing="0" width="600" style="background-image: url('img/Баннер\ 2.png')">
+          <tr>
+            <td align="center" class="center">
+              <table width="600px" class="table-600" cellpadding="0" cellspacing="0">
+                
+                <tr>
+                  <td class="logo" align="center">
+                    <img src="img/logo-header1.png" alt="Логотип-Spim">
+                  </td>
+                    <td class="logo" align="center">
+                      <img src="img/logo-header2.png" alt="Логотип-Home">
+                    </td>
+                    <tr>
+                        <td align="center">
+                        <h1 class="title" style="font-family: arial, 'Open Sans', sans-serif;">Финальная распродажа этого лета!</h1>
+                      </td>
+                    </tr>
+                  </tr>
+                  <table>
+                  <tr>
+                    <td align="left" class="mobile-top">
+                      <img class="pb-14" src="img/slice01.png" alt="Sale1">
+                      <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">10%</p>
+                      <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">до 19:00</p>
+                    </td>
+                    <td align="left" class="mobile-top">
+                      <img class="pb-14" src="img/slice02.png" alt="Sale2">
+                      <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">8%</p>
+                      <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">до 22:00</p>
+                    </td>
+                    <td align="left" class="mobile-top">
+                      <img class="pb-14" src="img/slice03.png" alt="Sale3">
+                      <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">5%</p>
+                      <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">до 00:00</p>
+                    </td>
+                  </tr>
+                </table>
+                
+                <!-- <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#FFFFFF"> -->
+                    <tr>
+                      <td align="center">
+                        <table width="250" class="table-250" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td align="center">
+                                <img class="pb-14" src="img/Промокод.png" alt="Sale3">
+                            </td>
+              </td>
+            </tr>
+            <!-- </table>
+                   -->
+                   <tr>
+                    <td align="center" class="button">
+                      <a href="#" style="font-family: arial, 'Open Sans', sans-serif;">Получить скидку</a>
+                    </td>
+                  </tr>
+                  
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#FFFFFF">
+          <tr>
+            <td align="center" class="center">
+              <table width="520px" class="table-520" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="left">
+                    <h1 class="descr" style="font-family: arial, 'Open Sans', sans-serif;">Здравствуйте!</h1>
+                    <p class="descr" style="font-family: arial, 'Open Sans', sans-serif;">Теперь, когда вы готовы к школе и обновили спальни своих малышей, пришла пора подумать о себе. Возможно, настало время поменять подушку или вы давно собирались купить <a href="#">шерстяное одеяло</a> на тот период, когда по ночам уже холодает, а отопление ещё не включили.</p>
+                    <p class="descr" style="font-family: arial, 'Open Sans', sans-serif;">В конце концов, порадуйте себя новым комплектом <a href="#">мягкого постельного белья</a> или <a href="#">красивым уютным пледом</a>! Но торопитесь, <b>скидка 10%</b> на все эти радости будет действовать только <b>до 13:00</b>.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table width="500" class="table-250" cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="width: 33.33%; text-align: center;" class="mobile-top">
+                <img class="pb-14" src="img/product1.png" alt="Подушки">
+                <a href="#" style="font-family: arial, 'Open Sans', sans-serif;">Подушки</a>
+              </td>
+              <td style="width: 33.33%; text-align: center;" class="mobile-top">
+                <img class="pb-14" src="img/product2.png" alt="Одеяла">
+                <a href="#" style="font-family: arial, 'Open Sans', sans-serif;">Одеяла</a>
+              </td>
+              <td style="width: 33.33%; text-align: center;" class="mobile-top">
+                <img class="pb-14" src="img/product3.png" alt="Постельное белье">
+                <a href="#" style="font-family: arial, 'Open Sans', sans-serif;">Постельное белье</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 50%; text-align: center;" class="mobile-top">
+                <img class="pb-14" src="img/product4.png" alt="Пледы и покрывала">
+                <a href="#" style="font-family: arial, 'Open Sans', sans-serif;">Пледы и покрывала</a>
+              </td>
+              <td style="width: 50%; text-align: center;" class="mobile-top">
+                <img class="pb-14" src="img/product5.png" alt="Ванная">
+                <a href="#" style="font-family: arial, 'Open Sans', sans-serif;">Ванная</a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" style="text-align: center;" class="mobile-top">
+                <img class="pb-14" src="img/product6.png" alt="Кухня">
+                <a href="#" style="font-family: arial, 'Open Sans', sans-serif;">Кухня</a>
+              </td>
+            </tr>
+          </table>
+          <table width="600px" class="table-600" cellpadding="0" cellspacing="0">
+                
+          <tr>
+            <td align="center" class="pb-32">
+              <table cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="center" class="button">
+                    <a href="#" style="font-family: arial, 'Open Sans', sans-serif;">В магазин</a>
+                  </td>
+                </tr>
+            </table>
+                <tr>
+                    <td align="center">
+                      <p style="font-family: arial, 'Open Sans', sans-serif;" class="descr-footer">Промокод действует на все товары, кроме разделов «Кровати» и «Матрасы». Cкидка не суммируется со скидками на сайте, скидками и подарками по другим промокодам и дисконтным картам. Размер скидки зависит от времени оформления заказа.</p>
+                    </td>
+                  </tr>             
+            </td>
+          </tr>
+          </table>
+          <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff">
+            <tr>
+              <td align="center" class="center">
+                <table width="250" class="table-250" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="center" class="pb-13">
+                      <table width="120" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td align="left">
+                            <a href="#">
+                              <img src="img/icons8-vk-48.png" alt="Vk">
+                            </a>
+                          </td>
+                          <td align="center">
+                            <a href="#">
+                              <img src="img/icons8-instagram-48.png" alt="Instagram">
+                            </a>
+                          </td>
+                          <td align="right">
+                            <a href="#">
+                              <img src="img/icons8-facebook-48.png" alt="Facebook">
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <p style="font-family: arial, 'Open Sans', sans-serif;" class="descr-footer">Данное письмо было отправлено на hafizova.i@gmail.com. Пожалуйста, добавьте
+                        mailer@spim.ru в вашу адресную книгу, чтобы наши письма не попадали в спам.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#FFFFFF">
+            <tr>
+              <td align="center">
+                <table width="250" class="table-250" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="center" style="display: flex; align-items: center;">
+                        <img src="img/отписаться.png" alt="Отписаться">
+                      <p style="font-family: arial, 'Open Sans', sans-serif;" class="descr-footer-small">
+                        Отписаться</p>
+                    
+                    <!-- <td align="center" style="display: flex; align-items: center;"> -->
+                        <img src="img/веб-версия.png" alt="Веб-версия">
+                        <p style="font-family: arial, 'Open Sans', sans-serif;" class="descr-footer-small">
+                          Веб версия</p>
+                      </td>
+                      </td>
+                      </tr>
+      </td>
+    </tr>
+	</table>
+</body>
+
+</html>
+
+          <!-- <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff">
+            <tr>
+              <td align="center" class="center">
+                <table width="520px" class="table-520" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left">
+                      <h2 class="title2" style="font-family: arial, 'Open Sans', sans-serif;">Представленные художники</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="src">
+                      <img src="img/pngwing.com-8.png" alt="Поль Гоген">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="left">
+                      <h3 class="title3" style="font-family: arial, 'Open Sans', sans-serif;">Поль Гоген</h3>
+                      <p class="descr-small" style="font-family: arial, 'Open Sans', sans-serif;">Прежде всего, разбавленное изрядной долей эмпатии, рациональное мышление в значительной степени обусловливает важность укрепления моральных ценностей.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="src">
+                      <img src="img/pngwing.com-3.png" alt="Огюст Ренуар">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="left">
+                      <h3 class="title3" style="font-family: arial, 'Open Sans', sans-serif;">Огюст Ренуар</h3>
+                      <p class="descr-small" style="font-family: arial, 'Open Sans', sans-serif;">А также сделанные на базе интернет-аналитики выводы освещают чрезвычайно интересные особенности картины в целом.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="src">
+                      <img src="img/pngwing.com-4.png" alt="Клод Моне">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="left">
+                      <h3 class="title3" style="font-family: arial, 'Open Sans', sans-serif;">Клод Моне</h3>
+                      <p class="descr-small" style="font-family: arial, 'Open Sans', sans-serif;">Современная методология разработки однозначно фиксирует необходимость системы массового участия.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="src">
+                      <img src="img/pngwing.com-5.png" alt="Эдуард Мане">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="left">
+                      <h3 class="title3" style="font-family: arial, 'Open Sans', sans-serif;">Эдуард Мане</h3>
+                      <p class="descr-small" style="font-family: arial, 'Open Sans', sans-serif;">Но социально-экономическое развитие является качественно новой ступенью вывода текущих активов.</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="src">
+                      <img src="img/pngwing.com-2.png" alt="Винсент Ван Гог">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td align="left">
+                      <h3 class="title3" style="font-family: arial, 'Open Sans', sans-serif;">Винсент Ван Гог</h3>
+                      <p class="descr-small" style="font-family: arial, 'Open Sans', sans-serif;">Повседневная практика показывает, что разбавленное изрядной долей эмпатии, рациональное мышление требует анализа поставленных обществом задач.</p>
+                    </td>
+                  </tr>
+
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#FFFFFF">
+            <tr>
+              <td align="center">
+                <table width="520px" class="table-250" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="left">
+                      <h2 class="title-bottom" style="font-family: arial, 'Open Sans', sans-serif;">И это ещё не всё!</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table width="500" class="table-250" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td align="left" class="mobile-top">
+                            <img class="pb-14" src="img/pngwing.com-10.png" alt="Check">
+                            <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">Уникальные подборки работ с авторскими рецензиями</p>
+                          </td>
+                          <td align="left" class="mobile-top">
+                            <img class="pb-14" src="img/pngwing.com-6.png" alt="Calendar">
+                            <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">Возможность настроить нашу рассылку под свой личный вкус</p>
+                          </td>
+                          <td align="left" class="mobile-top">
+                            <img class="pb-14" src="img/pngwing.com-7.png" alt="ArrowUp">
+                            <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">У вас есть пожелания и предложения?
+                              Напишите нам в ответ на это письмо!</p>
+                          </td>
+                        </tr>
+                      </table>
+
+                        <tr>
+                          <td align="center" class="pb-32">
+                            <table cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td align="center" class="button">
+                                  <a href="#" style="font-family: arial, 'Open Sans', sans-serif;">Узнать все подробности</a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                    </td>
+                </table>
+              </td>
+            </tr>
+          </table> -->
+
+          
