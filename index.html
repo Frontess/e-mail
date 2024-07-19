@@ -3,279 +3,284 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>HTML Template</title>
+	<title>E-mail рассылка</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 	<style>
-		body {
-			width: 100% !important;
-			-webkit-text-size-adjust: 100%;
-			-ms-text-size-adjust: 100%;
-			margin: 0;
-			padding: 0;
-			line-height: 100%;
-      background-color: #F7F7F7; /* Цвет фона вокруг письма */
-            min-height: 100vh;
-		}
-    .email-container {
-            background-color: white; /* Цвет фона письма */
-            
-            margin: 0 auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%;
-        }
-        .footer {
-            background-color: #f7f7f7; /* Цвет фона нижней части письма */
-            text-align: center;
-            padding: 20px;
-            margin: 0 auto;
-            width: 100%;
-            max-width: 600px;         
-        }
+	body {
+	width: 100% !important;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	margin: 0;
+	padding: 0;
+	line-height: 100%;
+  background-color: #F7F7F7; /* Цвет фона вокруг письма */
+  min-height: 100vh;
+}
+.email-container {
+  background-color: white; /* Цвет фона письма */
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+ }
+.footer {
+  background-color: #f7f7f7; /* Цвет фона нижней части письма */
+  text-align: center;
+  padding: 34px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 470px;         
+}
 		[style*="Arial"] {font-family: arial, 'Open Sans', sans-serif !important;}
 
-		img {
-			outline: none;
-			text-decoration: none;
-			border:none;
-			-ms-interpolation-mode: bicubic;
-			max-width: 100%!important;
-			margin: 0;
-			padding: 0;
-			display: block;
-		}
+img {
+	outline: none;
+	text-decoration: none;
+	border:none;
+	-ms-interpolation-mode: bicubic;
+	max-width: 100%!important;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
 
-		table td {
-			border-collapse: collapse;
-		}
+table td {
+	border-collapse: collapse;
+}
 
-		table {
-			border-collapse: collapse;
-			mso-table-lspace: 0pt;
-			mso-table-rspace: 0pt;
-		}
+table {
+	border-collapse: collapse;
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+}
 
-    .logo {
-      padding-bottom: 41px;
-      padding-right: 36px;
-    }
+.logo {
+  padding-bottom: 20px;
+  padding-right: 36px;
+}
 
-    .title {
-      margin: 0;
-      padding: 0px 147px 30px;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 42px;
-      line-height: 40px;
-      color: #000000;
-    }
+.logo-header1 {
+  position: absolute;
+  top: 8%;
+  right: 50%;
+  padding-bottom: 20px;
+  padding-right: 36px;
+}
 
-    .title2 {
-      margin: 0;
-      padding-bottom: 21px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
-      color: #FFFFFF;
-    }
+.logo-header2 {
+  position: absolute;
+  top: 10%;
+  left: 51%;
+  padding-bottom: 20px;
+  padding-right: 36px;
+}
 
-    .title3 {
-      margin: 0;
-      padding-bottom: 8px;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 24px;
-      color: #FFFFFF;
-    }
+.title {
+  margin: 0;
+  padding: 0px 147px 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 40px;
+  color: #000000;
+}
 
-    .title-bottom {
-      margin: 0;
-      padding-bottom: 17px;
-      padding-top: 25px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
-      color: #515151;
-    }
+.title-promo {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  color: #2E2E2E;
+}
 
-    .descr {
-      margin: 0;
-      padding-bottom: 40px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 28px;
-      color: #000000;
-    }
+.title-bottom {
+  margin: 0;
+  padding-bottom: 17px;
+  padding-top: 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #515151;
+}
 
-    .descr-small {
-      margin: 0;
-      padding-bottom: 21px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 12px;
-      line-height: 18px;
-      color: #FFFFFF;
-    }
+.descr {
+  margin: 0;
+  padding-bottom: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
 
-    .descr-small-grey {
-      margin: 0;
-      margin-right: 25px;
-      padding-bottom: 34px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 16px;
-      color:  #515151;
-    }
+.descr-small {
+  margin: 0;
+  padding-bottom: 21px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
 
-    .descr-footer {
-      margin: 0;
-      padding: 68px 50px 50px 50px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 20px;
-      color: #C4C4C4;
-    }
+.descr-small-grey {
+  margin: 0;
+  margin-right: 25px;
+  padding-bottom: 34px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color:  #515151;
+}
 
-    .descr-footer-small {
-      margin: 0;
-      padding-bottom: 10px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 16px;
-      color: #A3A3A3;
-    }
+.descr-footer {
+  margin: 0;
+  padding: 68px 50px 50px 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C4C4C4;
+}
 
-    .descr-footer-small a {
-      color: #9D5CD0;
-    }
+.descr-footer-small {
+  margin: 0;
+  vertical-align: middle;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #A3A3A3;
+}
 
-    .src {
-      padding-bottom: 21px;
-      border-spacing: 0;
-    }
+.src {
+  padding-bottom: 21px;
+  border-spacing: 0;
+}
 
-    .pb-13 {
-      padding-bottom: 13px;
-      border-spacing: 0;
-    }
+.pb-13 {
+  padding-bottom: 13px;
+  border-spacing: 0;
+}
 
-    .pb-14 {
-      padding-bottom: 14px;
-      border-spacing: 0;
-    }
-    .pb-20 {
-      padding-bottom: 20px;
-      border-spacing: 0;
-    }
-    .pb-30 {
-      padding-bottom: 30px;
-      border-spacing: 0;
-    }
+.pb-14 {
+  padding-bottom: 14px;
+  border-spacing: 0;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+  border-spacing: 0;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+  border-spacing: 0;
+}
+
+.button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #2ABE80;
+  color: #FFFFFF;
+  width: 247px;
+  height: 60px;
+  line-height: 23px;
+}
+
+.button a {
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.media-container {
+   margin: 50px;
+}
+
+.table-banner {
+  width: 600px;
+  min-height: 725px; /* нужная высота */
+  background-image: url('img/Баннер 2.png');
+  background-size: cover;
+  border: 1px solid black;
+  margin-bottom: 49px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.promo {
+  width: 250px;
+  border: 1px dashed black; /* Прямоугольная рамка штрихом */
+  border-collapse: collapse; /* Убираем двойные линии между ячейками */
+}
     
-    .center {
-      padding-top: 30px;
-    }
-
-    .button {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      text-align: center;
-      border-radius: 50px;
-      background-color: #2ABE80;
-      color: #FFFFFF;
-      width: 247px;
-      height: 60px;
-      line-height: 23px;
-    }
-
-    .button a {
-      color: #FFFFFF;
-      width: 100%;
-      height: 100%;
-      text-decoration: none;
-    }
-
-    .media-container {
-      margin: 50px;
-    }
-
-
+.promo td {
+  padding: 10px; /* Отступ внутри ячеек */
+}
+    
 .descr-sale {
   margin: 0;
-      margin-right: 25px;
-      padding-bottom: 3px;
-      font-style: bold;
-      font-weight: bold;
-      font-size: 40px;
-      line-height: 41px;
-      color:  #2E2E2E;
+  margin-right: 25px;
+  padding-bottom: 3px;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 41px;
+  color:  #2E2E2E;
 }
-    @media (max-width: 620px) {
-      .table-600 {
-        width: 280px !important;
-      }
-
-      .table-520 {
-        width: 244px !important;
-      }
-
-      .table-250 {
-        width: 240px !important;
-      }
-
-      .mobile-top {
-        display: block !important;
-      }
-    }
+    
 	</style>
 </head>
 
 <body style="margin: 0; padding: 0;" bgcolor="#F7F7F7">
   <div class="email-container">
-  <table cellpadding="0" cellspacing="0" class="table-600" overflow="hidden" background-size="cover" height="725px" width="100%" bgcolor="#ffffff" align="center">
-	  <tr>
-      <td>
-        <table class="table-600" cellpadding="0" cellspacing="0" width="600" style="background-image: url('img/Баннер\ 2.png'); border:1px solid black;">
+    <table cellpadding="0" cellspacing="0" overflow="hidden" background-size="cover" width="100%" bgcolor="#ffffff">
+	    <tr>
+        <td>
+         <table class="table-banner" cellpadding="0" cellspacing="0">
           <tr>
-            <td align="center" class="center">
-              <table width="600px" class="table-600" cellpadding="0" cellspacing="0">
+            <td align="center">
+              <table cellpadding="0" cellspacing="0">
                 <table>
-                <tr>
-                  <td class="logo" align="center">
-                    <img src="img/logo-header1.png" alt="Логотип-Spim">
-                  </td>
-                    <td class="logo" align="center">
+                   <tr>
+                     <td class="logo-header1" align="center">
+                       <img src="img/logo-header1.png" alt="Логотип-Spim">
+                     </td>
+                    <td class="logo-header2" align="center">
                       <img src="img/logo-header2.png" alt="Логотип-Home">
                     </td>
                 </table>
-                    <table>
-                      <tr>
-                        <td align="center">
+                <table>
+                    <tr>
+                      <td align="center">
                         <h1 class="title" style="font-family: arial, 'Open Sans', sans-serif;">ФИНАЛЬНАЯ РАСПРОДАЖА ЭТОГО ЛЕТА!</h1>
                        </td>
                       </tr>
-                    </table>
+                </table>
                   <table>
-                   <tr>
-                    <td align="left" class="mobile-top">
-                      <img class="pb-14" src="img/slice01.png" alt="Sale1">
-                      <p class="descr-sale" style="font-family: arial, 'Open Sans', sans-serif;">10%</p>
-                      <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">до 19:00</p>
-                    </td>
-                    <td align="left" class="mobile-top">
-                      <img class="pb-14" src="img/slice02.png" alt="Sale2">
-                      <p class="descr-sale" style="font-family: arial, 'Open Sans', sans-serif;">8%</p>
-                      <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">до 22:00</p>
-                    </td>
-                    <td align="left" class="mobile-top">
+                     <tr>
+                      <td align="left">
+                       <img class="pb-14" src="img/slice01.png" alt="Sale1">
+                       <p class="descr-sale" style="font-family: arial, 'Open Sans', sans-serif;">10%</p>
+                       <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">до 19:00</p>
+                      </td>
+                      <td align="left">
+                        <img class="pb-14" src="img/slice02.png" alt="Sale2">
+                        <p class="descr-sale" style="font-family: arial, 'Open Sans', sans-serif;">8%</p>
+                        <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">до 22:00</p>
+                      </td>
+                    <td align="left">
                       <img class="pb-14" src="img/slice03.png" alt="Sale3">
                       <p class="descr-sale" style="font-family: arial, 'Open Sans', sans-serif;">5%</p>
                       <p class="descr-small-grey" style="font-family: arial, 'Open Sans', sans-serif;">до 00:00</p>
@@ -285,28 +290,30 @@
                 <table>
                     <tr>
                       <td align="center">
-                        <table width="250" class="table-250" cellpadding="0" cellspacing="0">
+                        <table width="250" class="promo" cellpadding="0" cellspacing="0">
                           <tr>
                             <td align="center">
-                                <img class="pb-30" src="img/Промокод.png" alt="Sale3">
+                              <h2 class="title-promo" style="font-family: arial, 'Open Sans', sans-serif;">GOODBYELETO</h2>
                             </td>
                        </td>
                     </tr>
-         
-                   <tr>
-                    <td align="center" class="button" class="pb-30">
-                      <a href="#" style="font-family: arial, 'Open Sans', sans-serif;">Получить скидку</a>
-                    </td>
-                  </tr>
                 </table>
+                  <div class="invisible">промокод</div>
+                    <table>
+                      <tr>
+                        <td align="center" class="button" class="pb-30">
+                          <a href="#" style="font-family: arial, 'Open Sans', sans-serif;">Получить скидку</a>
+                        </td>
+                      </tr>
+                    </table>
               </table>
             </td>
           </tr>
         </table>
 
-        <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#FFFFFF">
+        <table cellpadding="0" cellspacing="0" width="600" bgcolor="#FFFFFF">
           <tr>
-            <td align="center" class="center">
+            <td align="center">
               <table width="520px" class="table-520" cellpadding="0" cellspacing="0">
                 <tr>
                   <td align="left">
@@ -319,39 +326,49 @@
               </td>
             </tr>
           </table>
-
-          <table class="media-container" class="table-600" width="500"  cellpadding="0" cellspacing="0">
+          <table class="media-container" width="500"  cellpadding="0" cellspacing="0">
             <tr>
-              <td style="width: 33.33%; text-align: center;" class="mobile-top">
+              <td style="width: 33.33%; text-align: center;">
+                <a href="#">
                 <img class="pb-20" src="img/product1.png" alt="Подушки">
-                <a href="#" style="font-family: arial, 'Open Sans', sans-serif; font-weight: bold; color: rgb(45, 149, 234);">Подушки</a>
+                </a>
+                <a href="#" style="font-family: arial, 'Open Sans', sans-serif;  display: block; margin-bottom: 40px; font-weight: bold; color: rgb(45, 149, 234);">Подушки</a>
               </td>
-              <td style="width: 33.33%; text-align: center;" class="mobile-top">
+              <td style="width: 33.33%; text-align: center;">
+                <a href="#">
                 <img class="pb-20" src="img/product2.png" alt="Одеяла">
-                <a href="#" style="font-family: arial, 'Open Sans', sans-serif; font-weight: bold; color: rgb(45, 149, 234);">Одеяла</a>
+                </a>
+                <a href="#" style="font-family: arial, 'Open Sans', sans-serif;  display: block; margin-bottom: 40px; font-weight: bold; color: rgb(45, 149, 234);">Одеяла</a>
               </td>
-              <td style="width: 33.33%; text-align: center;" class="mobile-top">
+              <td style="width: 33.33%; text-align: center;">
+                <a href="#">
                 <img class="pb-20" src="img/product3.png" alt="Постельное белье">
-                <a href="#" style="font-family: arial, 'Open Sans', sans-serif; font-weight: bold; color: rgb(45, 149, 234);">Постельное белье</a>
+                </a>
+                <a href="#" style="font-family: arial, 'Open Sans', sans-serif;  display: block; margin-bottom: 40px; font-weight: bold; color: rgb(45, 149, 234);">Постельное белье</a>
               </td>
             </tr>
             <tr>
-              <td style="width: 33.33%; text-align: center;" class="mobile-top">
-                <img class="pb-20" src="img/product4.png" alt="Пледы и покрывала">
+              <td style="width: 33.33%; text-align: center;">
+                <a href="#">
+                <img href="#" class="pb-20" src="img/product4.png" alt="Пледы и покрывала">
+                <a href="#">
                 <a href="#" style="font-family: arial, 'Open Sans', sans-serif; font-weight: bold; color: rgb(45, 149, 234);">Пледы и покрывала</a>
               </td>
-              <td style="width: 33.33%; text-align: center;" class="mobile-top">
-                <img class="pb-20" src="img/product5.png" alt="Ванная">
+              <td style="width: 33.33%; text-align: center;">
+                <a href="#">
+                <img href="#" class="pb-20" src="img/product5.png" alt="Ванная">
+                </a>
                 <a href="#" style="font-family: arial, 'Open Sans', sans-serif; font-weight: bold; color: rgb(45, 149, 234);">Ванная</a>
               </td>
-              <td style="width: 33.33%; text-align: center;" class="mobile-top">
+              <td style="width: 33.33%; text-align: center;">
+                <a href="#">
                 <img class="pb-20" src="img/product6.png" alt="Кухня">
+                </a>
                 <a href="#" style="font-family: arial, 'Open Sans', sans-serif; font-weight: bold; color: rgb(45, 149, 234);">Кухня</a>
               </td>
             </tr>
           </table>
-       
-          <table width="600px" class="table-600" cellpadding="0" cellspacing="0">            
+          <table width="600px" cellpadding="0" cellspacing="0">            
             <tr>
              <td align="center" class="pb-32">
               <table cellpadding="0" cellspacing="0">
@@ -375,92 +392,93 @@
       </tr>
     </table>
   </div>  
-
-        <div class="footer">
-          <!-- <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#F7F7F7"> -->
-            <table cellpadding="0" cellspacing="0" class="table-600" width="100%" bgcolor="#F7F7F7" align="center">
+  
+  <div class="footer">
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#F7F7F7" align="center">
+      <tr>
+        <td align="center">
+          <table width="100%" class="table-250" cellpadding="0" cellspacing="0">
             <tr>
-              <td align="center" class="center">
-                <table width="100%" class="table-250" cellpadding="0" cellspacing="0">
+              <td align="center" class="pb-13">
+                <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
-                    <td align="center" class="pb-13">
-                      <table width="100%" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <td align="left">
-                            <a href="#">
-                              <img style="margin-right: 20px;" src="img/vk.png" alt="Vk">
-                            </a>
-                          </td>
-                          <td align="center">
-                            <a href="#">
-                              <img style="margin-right: 20px;" src="img/facebook.png" alt="Facebook">
-                            </a>
-                          </td>
-                          <td align="right">
-                            <a href="#">
-                              <img style="margin-right: 20px;" src="img/x.png" alt="X">
-                            </a>
-                          </td>
-                          <td align="right">
-                            <a href="#">
-                              <img style="margin-right: 20px;" src="img/instagram.png" alt="instagram">
-                            </a>
-                          </td>
-                          <td align="right">
-                            <a href="#">
-                              <img style="margin-right: 20px;" src="img/youtube.png" alt="youtube">
-                            </a>
-                          </td>
-                          <td align="right">
-                            <a href="#">
-                              <img style="margin-right: 20px;" src="img/одноклассники.png" alt="одноклассники">
-                            </a>
-                          </td>
-                          <td align="right">
-                            <a href="#">
-                              <img style="margin-right: 20px;" src="img/tel.png" alt="Телефон">
-                            </a>
-                          </td>
-                        </tr>
-                      </table>
+                    <td>
+                      <a href="#">
+                        <img style="margin-right: 20px;" src="img/vk.png" alt="Vk">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img style="margin-right: 20px;" src="img/facebook.png" alt="Facebook">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img style="margin-right: 20px;" src="img/x.png" alt="X">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img style="margin-right: 20px;" src="img/instagram.png" alt="instagram">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img style="margin-right: 20px;" src="img/youtube.png" alt="youtube">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img style="margin-right: 20px;" src="img/одноклассники.png" alt="одноклассники">
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#">
+                        <img style="margin-right: 20px;" src="img/tel.png" alt="Телефон">
+                      </a>
                     </td>
                   </tr>
-                  <tr>
-                    <table>
-                    <td align="center">
-                      <p style="font-family: arial, 'Open Sans', sans-serif;" class="descr-footer-small">
+                </table>
+              </td>
+            </tr>
+          <tr>
+        <table>
+          <td align="center">
+            <p style="font-family: arial, 'Open Sans', sans-serif; padding-bottom: 25px;" class="descr-footer-small">
                         Данное письмо было отправлено на hafizova.i@gmail.com. Пожалуйста, добавьте
                         mailer@spim.ru в вашу адресную книгу, чтобы наши письма не попадали в спам.</p>
-                    </td>
-                  </table>
-                  </tr>
-                </table>
-          <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#F7F7F7">
-            <tr>
-              <td align="center"  class="center">
-                <table width="250" class="table-250" cellpadding="0" cellspacing="0">
-                  <tr>
-                    <td align="center" style="display: flex; align-items: center;">
-                        <img src="img/отписаться.png" alt="Отписаться">
-                      <p style="font-family: arial, 'Open Sans', sans-serif;" class="descr-footer-small">
-                        Отписаться</p>
-                    
-                    <!-- <td align="center" style="display: flex; align-items: center;"> -->
-                        <img src="img/веб-версия.png" alt="Веб-версия">
-                        <p style="font-family: arial, 'Open Sans', sans-serif;" class="descr-footer-small">
-                          Веб версия</p>
-                      </td>
-                  </tr>
-                </table>
-                      </td>
-                      </tr>
-            </table>
+          </td>
         </table>
-          </div>
-      <!-- </td>
-    </tr>
-	</table> -->
-
+        <table>
+          <tr>
+            <td class="logo" align="center">
+              <div style="display: flex; align-items: center;">
+                <a href="#">
+                  <img src="img/отписаться.png" alt="Отписаться" style="margin-right: 10px;">
+                </a>
+                    <a href="#" style="text-decoration: none;">
+                       <p style="font-family: arial, 'Open Sans', sans-serif;" class="descr-footer-small">Отписаться
+                       </p>
+                    </a>
+              </div>
+            </td>
+            <td class="logo" align="center">
+              <div style="display: flex; align-items: center;">
+                <a href="#">
+                  <img src="img/веб-версия.png" alt="Веб-версия" style="margin-right: 10px;">
+                </a>
+                <a href="#" style="text-decoration: none;">
+                  <p style="font-family: arial, 'Open Sans', sans-serif;" class="descr-footer-small">Веб версия
+                  </p>
+                </a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </tr>
+    </table>
+ </table>
+</div>
 </body>
 
 </html>
